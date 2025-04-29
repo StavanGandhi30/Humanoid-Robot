@@ -2,18 +2,19 @@ from Hardware import Motor
 from Utils import hex_to_decimal
 
 class Eyes:
-    def __init__(self, debug=False, board="0x40", ):
+    def __init__(self, board, start_unit, debug=False):
         self.horizontal_motor = Motor(
             name="Horizontal Motor",
-            hardware_id=float(f'{hex_to_decimal(board)}00'),
+            hardware_id=int(f'{hex_to_decimal(board)}{start_unit:02}'),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
             debug=debug
         )
+
         self.vertical_motor = Motor (
             name="Vertical Motor",
-            hardware_id=float(f'{hex_to_decimal(board)}01'),
+            hardware_id=int(f'{hex_to_decimal(board)}{start_unit+1:02}'),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -54,4 +55,4 @@ class Eyes:
         return [self.horizontal_motor.current_angle, self.vertical_motor.current_angle]
         
     def __str__(self):
-        return f"Eyes:\n\t{self.horizontal_motor}\n\t{self.vertical_motor}\n"
+        return f"Eyes:\n\t{self.horizontal_motor}\n\t{self.vertical_motor}"
