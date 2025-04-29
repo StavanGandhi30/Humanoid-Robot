@@ -55,7 +55,7 @@ class Eyes:
         return [self.horizontal_motor, self.vertical_motor]
     
     def get_position(self):
-        return [self.horizontal_motor.current_angle, self.vertical_motor.current_angle]
+        return [self.horizontal_motor.get_pos(), self.vertical_motor.get_pos()]
         
     def __str__(self):
         return f"Eyes:\n\t{self.horizontal_motor}\n\t{self.vertical_motor}"

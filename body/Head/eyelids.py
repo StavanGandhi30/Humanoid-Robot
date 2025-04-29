@@ -2,7 +2,7 @@ from hardware import Motor
 from utils import hex_to_decimal
 
 class Eyelids:
-    def __init__(self, board, start_unit, debug=False):
+    def __init__(self, debug=False):
         self.__left_top_eyelid = Motor (
             name="Left-Top Eyelids",
             hardware_id=int(f'{hex_to_decimal('0x40')}02'),
