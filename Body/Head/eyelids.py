@@ -1,5 +1,5 @@
-from Hardware import Motor
-from Utils import hex_to_decimal
+from hardware import Motor
+from utils import hex_to_decimal
 
 class Eyelids:
     def __init__(self, board, start_unit, debug=False):

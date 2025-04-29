@@ -1,10 +1,10 @@
-from Hardware import Motor
-from Utils import hex_to_decimal
+from hardware import Motor
+from utils import hex_to_decimal
 
 class Eyes:
     def __init__(self, board, start_unit, debug=False):
         self.horizontal_motor = Motor(
-            name="Horizontal Motor",
+            name="Eye Horizontal Motor",
             hardware_id=int(f'{hex_to_decimal(board)}{start_unit:02}'),
             min_angle=0,
             max_angle=20,
@@ -13,7 +13,7 @@ class Eyes:
         )
 
         self.vertical_motor = Motor (
-            name="Vertical Motor",
+            name="Eye Vertical Motor",
             hardware_id=int(f'{hex_to_decimal(board)}{start_unit+1:02}'),
             min_angle=0,
             max_angle=20,

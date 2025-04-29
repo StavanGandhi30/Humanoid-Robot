@@ -1,5 +1,5 @@
-from Hardware import Motor
-from Utils import hex_to_decimal
+from hardware import Motor
+from utils import hex_to_decimal
 
 class Mouth:
     def __init__(self, board, start_unit, debug=False):
@@ -13,4 +13,4 @@ class Mouth:
         )
 
     def __str__(self):
-        return "Mouth:\n\tis successfully loaded!"
+        return f"Mouth:\n\t{self.jaw}"

@@ -1,12 +1,11 @@
-from Body import Face, Neck
+from body import Head
 
-robot_face = Face()
-robot_neck = Neck()
+robot_head = Head()
 
-robot_eyes = robot_face.eyes
-robot_eyelids = robot_face.eyelids
-robot_eyebrows = robot_face.eyebrows
-robot_mouth = robot_face.mouth
+robot_eyes = robot_head.eyes
+robot_eyelids = robot_head.eyelids
+robot_eyebrows = robot_head.eyebrows
+robot_mouth = robot_head.mouth
+robot_neck = robot_head.neck
 
-print(robot_face)
-print(robot_neck)
+print(robot_head)
