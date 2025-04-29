@@ -5,7 +5,7 @@ class Eyes:
     def __init__(self, debug=False):
         self.horizontal_motor = Motor(
             name="Eye Horizontal Motor",
-            hardware_id=int(f'{hex_to_decimal('0x40')}00'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}00"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -14,7 +14,7 @@ class Eyes:
 
         self.vertical_motor = Motor (
             name="Eye Vertical Motor",
-            hardware_id=int(f'{hex_to_decimal('0x40')}01'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}01"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,

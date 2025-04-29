@@ -5,7 +5,7 @@ class Eyelids:
     def __init__(self, debug=False):
         self.__left_top_eyelid = Motor (
             name="Left-Top Eyelids",
-            hardware_id=int(f'{hex_to_decimal('0x40')}02'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}02"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -14,7 +14,7 @@ class Eyelids:
 
         self.__left_bottom_eyelid = Motor (
             name="Left-Bottom Eyelids",
-            hardware_id=int(f'{hex_to_decimal('0x40')}03'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}03"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -23,7 +23,7 @@ class Eyelids:
 
         self.__right_top_eyelid = Motor (
             name="Right-Top Eyelids",
-            hardware_id=int(f'{hex_to_decimal('0x40')}04'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}04"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -32,7 +32,7 @@ class Eyelids:
 
         self.__right_bottom_eyelid = Motor (
             name="Right-Bottom Eyelids",
-            hardware_id=int(f'{hex_to_decimal('0x40')}05'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}05"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,

@@ -12,4 +12,4 @@ class Head:
         return self.eyes, self.eyelids, self.eyebrows, self.mouth, self.neck
 
     def __str__(self):
-        return f"Face: {"-"*100}\n\n{self.eyes}\n{self.eyelids}\n{self.eyebrows}\n{self.mouth}\n{self.neck}\n"
+        return f"Face: {'-'*100}\n\n{self.eyes}\n{self.eyelids}\n{self.eyebrows}\n{self.mouth}\n{self.neck}\n"

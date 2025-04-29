@@ -5,7 +5,7 @@ class Mouth:
     def __init__(self, debug=False):
         self.jaw = Motor(
             name="Jaw",
-            hardware_id=int(f'{hex_to_decimal('0x40')}10'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}10"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,

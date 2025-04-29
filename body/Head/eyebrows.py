@@ -5,7 +5,7 @@ class Eyebrows:
     def __init__(self, debug=False):
         self.left_left_eyebrow = Motor(
             name="Left-Left Eyebrow",
-            hardware_id=int(f'{hex_to_decimal('0x40')}06'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}06"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -13,7 +13,7 @@ class Eyebrows:
         )
         self.left_right_eyebrow = Motor(
             name="Left-Right Eyebrow",
-            hardware_id=int(f'{hex_to_decimal('0x40')}07'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}07"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -22,7 +22,7 @@ class Eyebrows:
 
         self.right_left_eyebrow = Motor (
             name="Right-Left Eyebrow",
-            hardware_id=int(f'{hex_to_decimal('0x40')}08'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}08"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
@@ -31,7 +31,7 @@ class Eyebrows:
 
         self.right_right_eyebrow = Motor (
             name="Right-Right Eyebrow",
-            hardware_id=int(f'{hex_to_decimal('0x40')}09'),
+            hardware_id=int(f"{hex_to_decimal('0x40')}09"),
             min_angle=0,
             max_angle=20,
             rest_angle=10,
