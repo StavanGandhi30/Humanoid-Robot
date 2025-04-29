@@ -22,7 +22,7 @@ def create_sliders(root):
         frame.columnconfigure(j, weight=1)
 
     for idx in range(num_sliders):
-        slider = tk.Scale(frame, from_=0, to=100, orient='horizontal', command=lambda value, idx=idx: on_slider_change(idx, value))
+        slider = tk.Scale(frame, from_=0, to=180, orient='horizontal', command=lambda value, idx=idx: on_slider_change(idx, value))
         slider.grid(row=idx // cols, column=idx % cols, padx=5, pady=5, sticky="nsew")
 
 def main():

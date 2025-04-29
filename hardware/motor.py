@@ -20,10 +20,10 @@ class Motor:
             print(f"Moving motor {self.name} (ID: {self.hardware_id}) to {angle} degrees.")
 
     def move_to_max_pos(self):
-        self.move_to(self.rest_angle)
+        self.move_to(self.max_angle)
 
     def move_to_min_pos(self):
-        self.move_to(self.rest_angle)
+        self.move_to(self.min_angle)
 
     def move_to_rest_pos(self):
         self.move_to(self.rest_angle)
