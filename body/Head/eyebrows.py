@@ -6,36 +6,24 @@ class Eyebrows:
         self.left_eyebrow_outer = Servo (
             name="Left Outer Eyebrow",
             hardware_id=(f"{hex_to_decimal('0x41')}06"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
         self.left_eyebrow_inner = Servo (
             name="Left Inner Eyebrow",
             hardware_id=(f"{hex_to_decimal('0x41')}07"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
         self.right_eyebrow_outer = Servo (
             name="Right Outer Eyebrow",
             hardware_id=(f"{hex_to_decimal('0x41')}08"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
         
         self.right_eyebrow_inner = Servo (
             name="Right Inner Eyebrow",
             hardware_id=(f"{hex_to_decimal('0x41')}09"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
     def get_motors(self):

@@ -6,37 +6,25 @@ class Eyelids:
         self.__left_upper_eyelid = Servo (
             name="Left Upper Eyelid",
             hardware_id=(f"{hex_to_decimal('0x41')}02"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
         self.__left_lower_eyelid = Servo (
             name="Left Lower Eyelid",
             hardware_id=(f"{hex_to_decimal('0x41')}03"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
         self.__right_upper_eyelid = Servo (
             name="Right Upper Eyelid",
             hardware_id=(f"{hex_to_decimal('0x41')}04"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
         self.__right_lower_eyelid = Servo (
             name="Right Lower Eyelid",
             hardware_id=(f"{hex_to_decimal('0x41')}05"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
         self.left_eyelids = [ self.__left_upper_eyelid, self.__left_lower_eyelid ]

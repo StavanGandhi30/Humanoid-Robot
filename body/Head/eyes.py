@@ -6,19 +6,13 @@ class Eyes:
         self.eye_yaw_motor = Servo (
             name="Eye Yaw Motor",
             hardware_id=(f"{hex_to_decimal('0x41')}00"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
         self.eye_pitch_motor = Servo (
             name="Eye Pitch Motor",
             hardware_id=(f"{hex_to_decimal('0x41')}01"),
-            min_angle=0,
-            max_angle=20,
-            rest_angle=10,
-            debug=debug
+            min_angle=0, max_angle=20, rest_angle=10, debug=debug
         )
 
     # Move some amount in left, right, up, or down direction
