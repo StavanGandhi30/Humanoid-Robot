@@ -1,1 +1,1 @@
-from .servo import Motor
+from .servo import ServoDriver

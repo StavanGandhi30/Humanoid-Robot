@@ -9,8 +9,9 @@ class ServoDriver:
         self.channel = channel
 
     def set_servo_angle(self, angle):
-        pulse = int(self.servo_min + (self.servo_max - self.servo_min) * angle / 180)
-        self.pwm.set_pwm(0, pulse)
+        pulse = int(self.servo_min + (self.servo_max - self.servo_min) * int(angle) / 180)
+        self.pwm.set_pwm(self.channel, 0, pulse)
+        print(f"Moving {self.channel} to {angle} degrees")
 
 if __name__ == "__main__":
     import time
