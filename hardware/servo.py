@@ -10,7 +10,7 @@ class Servo:
         self.rest_angle = rest_angle if self.__isValid(rest_angle) else self.min_angle
         self.current_angle = rest_angle
         self.debug = debug
-        self.servo = ServoDriver(address=decimal_to_hex(hardware_id[:2]), channel=hardware_id[2:])
+        self.servo = ServoDriver(address=decimal_to_hex(int(hardware_id[:2])), channel=int(hardware_id[2:]))
 
     def move_to(self, angle):
         # Clamp the angle within allowed range

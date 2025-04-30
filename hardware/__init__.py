@@ -1,1 +1,2 @@
-from .servo import ServoDriver
+from .driver import ServoDriver
+from .servo import Servo
