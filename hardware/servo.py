@@ -1,5 +1,4 @@
 from hardware.driver import ServoDriver
-from utils.utils import decimal_to_hex
 
 class Servo:
     def __init__(self, name, hardware_id, min_angle=0, max_angle=180, rest_angle=90, debug=True):
@@ -10,12 +9,10 @@ class Servo:
         self.rest_angle = rest_angle if self.__isValid(rest_angle) else self.min_angle
         self.current_angle = rest_angle
         self.debug = debug
-        self.servo = ServoDriver(address=decimal_to_hex(int(hardware_id[:2])), channel=int(hardware_id[2:]))
-
+        self.servo = ServoDriver(hardware_id=self.hardware_id)
+        
     def move_to(self, angle):
-        # Clamp the angle within allowed range
         if self.__isValid(angle):
-            # TODO: Send PWM signal here to the real motor
             self.servo.set_servo_angle(angle)
             self.current_angle = angle
             if self.debug:
